@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="pokemon25">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+<body>
+    <div>
+        <div>
+        <img class ='menu' src="./images/ham.svg" alt="Menu button">
+        </div>
+        <nav class='nav'>
+            <p ui-sref='home'>HOME</p>
+            <p ui-sref='search'>SEARCH</p>
+            <p ui-sref='resources'>RESOURCES</p>
+            <p ui-sref='about'>ABOUT</p>
+        </nav>
+    </div>
+
+<header>
+        <img src='./images/Pokemon Logo.png'>
+        <h1>The Original 25 Pokémon</h1>
+        <br>
+        
+</header>
+
+<ui-view></ui-view>
+
+
+
+
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js'></script>
+<script src="./js/app.js"></script>
+<script src="./controllers/homeCtrl.js"></script>
+<script src="./controllers/searchCtrl.js"></script>
+<script src="./controllers/resourcesCtrl.js"></script>
+<script src="./controllers/aboutCtrl.js"></script>
+<script src="./services/mainService.js"></script>
+<script src="./services/searchService.js"></script>
+<script src="./directives/searchDirective.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<section class='home-section'>
+    <h1>Search here for The Original 25 Pokémon!</h1>
+    <h1>Search by the Pokémon ID (1 thru 25).</h1>
+    <br>
+    <div>
+        <input type='text' ng-model="indexNum" placeholder='Number 1-25'/>
+        <button type='submit' ng-click="getPokeData(indexNum)">Submit</button>
+    </div>
+    <!--<div>
+        <input type='text' placeholder='Pokemon Name'/>
+        <button type='submit'>Submit</button>
+    </div>-->
+
+    <section ng-show='prop'>
+        <section>
+            <br>
+            <div class='img-size'>
+                <img ng-src="{{poke.image}}">
+            </div>
+            <br>
+            Name: {{poke.Name}}
+            <br>
+            National Pokedex ID: {{poke.NationalPokedexID}}
+            <br>
+            Height: {{poke.Height}} meters
+            <br>
+            Weight: {{poke.Weight}} kg
+            <br>
+            Base Speed: {{poke.BaseSpeed}}
+            <br>
+            Base Hit Points: {{poke.BaseHitPoints}} hit points
+            <br>
+            Base Attack: {{poke.BaseAttack}} hit points
+            <br>
+            Base Defense: {{poke.BaseDefense}} hit points
+            <br>
+            Base Special Attack: {{poke.BaseSpecialAttack}} hit points
+            <br>
+            Base Special Defense: {{poke.BaseSpecialDefense}} hit points
+            <br>
+            Move 1: {{poke.Move1}}
+            <br>
+            Move 2: {{poke.Move2}}
+            <br>
+            Move 3: {{poke.Move3}}
+            <br>
+        <section class='arrows'>
+            <div style='padding-right
+            :50px' ng-click='back()'><</div>
+            <div style='padding-left:50px' ng-click='next()'>></div>
+        </section>
+    </section>
+        <!--<div ng-show='prop'>
+            <table>
+                <tr>
+                    <td>Key</td>
+                </tr>
+                <tr>
+                    <td>Base Hit Points</td>
+                    <td>ipsum</td>
+                               
+                </tr>
+                <tr>
+                    <td>Base Attack</td>
+                    <td>ipsum</td>
+                     </tr>
+                    
+                <tr>
+                    <td>Base Defense</td>
+                    <td>ipsum</td>
+                  </tr>
+                <tr> 
+                    <td>Base Special Attack</td>
+                    <td>ipsum</td>
+                    </tr>
+                <tr>
+                    <td>Base Special Defense</td>
+                    <td>ipsum</td>
+                    </tr>
+            </table>
+
+        </div>-->
+
+
+
+    </section>
+</section>
+
+<footer>
+    <a href="http://127.0.0.1:8080/#!/about" class='contact' >Contact Information</a>
+</footer>
