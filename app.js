@@ -6,22 +6,22 @@ angular.module('pokemon25',['ui.router'])
          $stateProvider
         .state('home', {
             url: '/',
-            templateUrl: '../views/home.html',
+            templateUrl: './views/home.html',
             controller: 'homeCtrl'
         })
         .state('search', {
             url: '/search',
-            templateUrl: '../views/search.html',
+            templateUrl: './views/search.html',
             controller: 'searchCtrl'
         })
         .state('resources', {
             url: '/resources',
-            templateUrl: '../views/resources.html',
+            templateUrl: './views/resources.html',
             controller: 'resourcesCtrl'
         })
         .state('about',{
             url: '/about',
-            templateUrl: '../views/about.html',
+            templateUrl: './views/about.html',
             controller: 'aboutCtrl'
         })
 
