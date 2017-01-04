@@ -1,6 +1,6 @@
 angular.module('pokemon25').directive('searchDirective', function(){
     return{
-        templateUrl: '../views/searchInfo.html',
+        templateUrl: 'views/searchInfo.html',
         restrict: 'E',
         
         controller: function($scope, searchService){
