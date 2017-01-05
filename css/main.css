@@ -20,7 +20,12 @@ body {
     background-color: black;
     padding-top: 20px;
 }
-
+/*.listy {
+    list-style-type: lower-roman;
+}*/
+.test {
+    margin-left: -15px;
+}
 .nav {
     width: 100%;
     height: 60px;
@@ -99,7 +104,7 @@ footer {
     color: #FFCC03;
     text-decoration: none;
     padding-bottom: 3px;
-    font-size: 28px;
+    font-size: 30px;
 }
 
 .contact-2:hover {
@@ -112,11 +117,11 @@ footer {
     text-decoration: none;
     padding-bottom: 0.5px;
     font-size: 28px;
-    border-bottom: 1px solid #c7a008;
 }
 
 .hyperlinks:hover {
     color: #c7a008;
+    border-bottom: 1px solid #c7a008;
 }
 
 .pokemonDisplay {
@@ -185,6 +190,9 @@ footer {
     .contact {
         font-size:16px;
     }
+    .contact-2 {
+        font-size: 22px;
+    }
 
     footer {
         height: 3%;
@@ -209,7 +217,7 @@ footer {
 }
 
 @media (max-width: 455px) {
-    body{
+    body {
         background-color: green;
         font-size: 14px;
     }
@@ -225,6 +233,9 @@ footer {
     }
     .contact {
         font-size: 12px;
+    }
+    .contact-2 {
+        font-size: 17px;
     }
 
     footer {
@@ -259,9 +270,8 @@ footer {
         background-color: #3C59A5;
     }
     .mobile-nav {
-        display: none;
-        /*height: 0;
-        z-index: 10;*/
+        height: 0;
+        z-index: 10;
     }
     .mobile-nav ul {
         width: 100%;
@@ -291,7 +301,7 @@ footer {
         -webkit-transform: translate(0px);
     }
     .main-header {
-    height:47px;
+        height:47px;
     }
     .home-section {
         padding: 6px 35px 15px 35px;
