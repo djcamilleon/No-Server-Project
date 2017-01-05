@@ -5,7 +5,7 @@ angular.module('pokemon25')
             this.num = num;
             var deferred = $q.defer();
             console.log(num);
-            $http.get('http://pokeapi.co/api/v1/pokemon/' + num+'/')
+            $http.get('https://pokeapi.co/api/v1/pokemon/' + num+'/')
             .then(function(response){
                 var pokemonData = response.data;
                 console.log("from service", pokemonData);
