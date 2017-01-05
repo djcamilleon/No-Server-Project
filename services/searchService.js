@@ -16,7 +16,7 @@ angular.module('pokemon25')
         }
 
         this.getPokeImages = function(){
-            return $http.get('../imageData/pokemonImages.json')
+            return $http.get('../../imageData/pokemonImages.json')
         }
 
         //  this.next = function(){
