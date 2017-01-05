@@ -8,15 +8,23 @@
         <link rel="stylesheet" type="text/css" href="./css/main.css">
     </head>
 <body>
-    <div>
-        <div>
-        <img class ='menu' src="./images/ham.svg" alt="Menu button">
+    <div class='main-header'>
+            <div class="mobile-nav-bar">
+            <div class="mobile-nav-button">
+                <i class="bar"></i>
+                <i class="bar"></i>
+                <i class="bar"></i>
+            </div>
         </div>
-        <nav class='nav'>
-            <p ui-sref='home'>HOME</p>
-            <p ui-sref='search'>SEARCH</p>
-            <p ui-sref='resources'>RESOURCES</p>
-            <p ui-sref='about'>ABOUT</p>
+        
+        
+        <nav class='nav mobile-nav'>
+            <ul id='nav'>
+                <li><a ui-sref='home'>HOME</a></li>
+                <li><a ui-sref='search'>SEARCH</a></li>
+                <li><a ui-sref='resources'>RESOURCES</a></li>
+                <li><a ui-sref='about'>ABOUT</a></li>
+            </ul>
         </nav>
     </div>
 
@@ -34,6 +42,7 @@
 
 <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js'></script>
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 <script src="./app.js"></script>
 <script src="./controllers/homeCtrl.js"></script>
 <script src="./controllers/searchCtrl.js"></script>
@@ -42,6 +51,7 @@
 <script src="./services/mainService.js"></script>
 <script src="./services/searchService.js"></script>
 <script src="./directives/searchDirective.js"></script>
+<script src="./js/menu-bar.js"></script>
 
 </body>
 </html>
