@@ -82,6 +82,19 @@ footer {
     border-bottom: 1px solid #c7a008;
 }
 
+.hyperlinks {
+    color: #FFCC03;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 3px;
+    font-size: 28px;
+}
+
+.hyperlinks:hover {
+    color: #c7a008;
+    border-bottom: 1px solid #c7a008;
+}
+
 .menu {
     display: block;
     position: absolute;
