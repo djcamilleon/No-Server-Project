@@ -3,13 +3,12 @@
     <h1>Search by the Pokémon ID (1 thru 25).</h1>
     <br>
     <div>
-        <input type='text' ng-model="indexNum" placeholder='Number 1-25'/>
-        <button type='submit' ng-click="getPokeData(indexNum)">Submit</button>
+        <input class='inputBox' type='text' ng-model="indexNum" placeholder='Number 1-25'/>
+        <button class='submitButton' type='submit' ng-click="getPokeData(indexNum)">Submit</button>
     </div>
-    <!--<div>
-        <input type='text' placeholder='Pokemon Name'/>
-        <button type='submit'>Submit</button>
-    </div>-->
+    <div ng-show="loading">
+        <img src="./images/RotatingPokeball.gif" alt="">
+    </div>
 
     <section ng-show='prop'>
         <section>
@@ -44,44 +43,12 @@
             <br>
             Move 3: {{poke.Move3}}
             <br>
-        <section class='arrows'>
-            <div style='padding-right: 50px' ng-click='back()'><</div>
-            <div style='padding-left: 50px' ng-click='next()'>></div>
+            <br>
+            <section class='arrows'>
+                <div style='padding-right: 50px' ng-click='back()'>PREVIOUS <</div>
+                <div style='padding-left: 50px' ng-click='next()'>> NEXT</div>
+            </section>
         </section>
-    </section>
-        <!--<div ng-show='prop'>
-            <table>
-                <tr>
-                    <td>Key</td>
-                </tr>
-                <tr>
-                    <td>Base Hit Points</td>
-                    <td>ipsum</td>
-                               
-                </tr>
-                <tr>
-                    <td>Base Attack</td>
-                    <td>ipsum</td>
-                     </tr>
-                    
-                <tr>
-                    <td>Base Defense</td>
-                    <td>ipsum</td>
-                  </tr>
-                <tr> 
-                    <td>Base Special Attack</td>
-                    <td>ipsum</td>
-                    </tr>
-                <tr>
-                    <td>Base Special Defense</td>
-                    <td>ipsum</td>
-                    </tr>
-            </table>
-
-        </div>-->
-
-
-
     </section>
 </section>
 

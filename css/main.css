@@ -12,6 +12,7 @@ body {
     white-space: normal;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important; 
+    width:100%;
 }
 
 .main-header {
@@ -20,9 +21,6 @@ body {
     background-color: black;
     padding-top: 20px;
 }
-/*.listy {
-    list-style-type: lower-roman;
-}*/
 .test {
     margin-left: -15px;
 }
@@ -36,7 +34,7 @@ body {
     text-align: center;
 }
 .nav li{
-    display:inline;
+    display: inline;
 }
 
 .nav a {
@@ -46,11 +44,22 @@ body {
 .nav a hover {
     margin-right: 15px;
 }
-
+.inputBox {
+    height: 27px;
+    width: 250px;
+    font-size: 21px;
+    font-weight: bold;
+}
+.submitButton {
+    height: 32px;
+    width: 85px;
+    font-size: 21px;
+    border: none;
+    font-weight: bold;
+}
 
 header {
     display: flex;
-    /*justify-content: space-around;*/
     align-items: center;
     flex-direction: column;
     width: 100%;
@@ -83,9 +92,7 @@ footer {
     flex-direction: column;
     padding-left: 140px;
     padding-right: 140px;
-    /*white-space: -moz-pre-wrap !important;   Mozilla, since 1999 */
     word-break: break-word;
-    /*white-space: normal;*/
     padding-bottom: 80px;
 }
 .contact {
@@ -156,6 +163,8 @@ footer {
         display:none;
     }
 
+}
+
 @media (max-width: 1920px) {
     .menu {
         display:none;
@@ -184,7 +193,7 @@ footer {
     }
 
     .img-size {
-       transform: scale(0.5);
+       transform: scale(0.75);
     }
 
     .contact {
@@ -206,14 +215,14 @@ footer {
         padding: 12px 70px 38px 70px;
     }
     .trivia-title {
-    font-size: 20px;
-}
+        font-size: 20px;
+    }
     .trivia {
-    font-size: 18px;
-    padding-left: 70px;
-    padding-right: 70px;
-}
-        
+        font-size: 18px;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+         
 }
 
 @media (max-width: 455px) {
@@ -228,8 +237,9 @@ footer {
 
     header {
         font-size: 20px;
-        /*padding: 12px;*/
-        /*padding-top: 77px;*/
+    }
+    .img-size {
+       transform: scale(0.5);
     }
     .contact {
         font-size: 12px;
@@ -307,12 +317,25 @@ footer {
         padding: 6px 35px 15px 35px;
     }
     .trivia-title {
-    font-size: 16px;
+        font-size: 16px;
     }
     .trivia {
-    font-size: 14px;
-    padding-left: 35px;
-    padding-right: 35px;
+        font-size: 14px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .inputBox {
+        height: 20px;
+        width: 170px;
+        font-size: 14px;
+        font-weight: bold;
+}
+    .submitButton {
+        height: 26px;
+        width: 60px;
+        font-size: 14px;
+        border: none;
+        font-weight: bold;
     }
 }
 
