@@ -148,6 +148,7 @@ footer {
 
 .arrows {
     display: flex;
+    
     justify-content: center;
     align-items: center;
     flex-direction: row;
@@ -155,6 +156,9 @@ footer {
     height: 100%;
     color: #c7a008;
     font-size: 36px;
+}
+.arrows:hover {
+    cursor: pointer;
 }
 
 
