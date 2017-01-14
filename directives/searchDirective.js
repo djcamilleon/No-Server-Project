@@ -8,9 +8,6 @@ angular.module('pokemon25').directive('searchDirective', function () {
             $scope.getPokemon = searchService.getPokemon;
             $scope.getPokeImages = searchService.getPokeImages();
 
-            // if(indexNum > 25 || indexNum <= 0){
-            //     return $scope.tryAgain;
-            // }
             $scope.next = function () {
                 if ($scope.indexNum === 25) {
                     return;
@@ -38,12 +35,12 @@ angular.module('pokemon25').directive('searchDirective', function () {
                         console.log($scope.prop)
                     },500)
                     
-                    // console.log(pokemonData);
+                    console.log(pokemonData);
 
                     $scope.getPokeImages.then(function (response) {
-                        // console.log(response)
+                        console.log(response)
                         var images = response.data.images;
-                        // console.log('images', images)
+                        console.log('images', images)
                         $scope.poke = {
                             image: images[pokemonData.national_id],
                             'Name': pokemonData.name,
@@ -61,7 +58,7 @@ angular.module('pokemon25').directive('searchDirective', function () {
                             'Move3': pokemonData.moves[2].name
                         }
                         console.log('images', $scope.poke.image)
-                        // console.log('poke',$scope.poke)
+                        console.log('poke',$scope.poke)
                     })
 
 
