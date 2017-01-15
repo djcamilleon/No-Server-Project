@@ -7,7 +7,7 @@ body {
     background-color: #3C59A5;
     color: #FFCC03;
     font-size: 28px;
-    white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+    white-space: -moz-pre-wrap !important; 
     word-break: break-word;
     white-space: normal;
     text-rendering: optimizeLegibility !important;
@@ -85,6 +85,7 @@ footer {
 }
 .trivia {
     font-size: 20px;
+    font-weight: bold;
     color: #c7a008;
     display: flex;
     justify-content: center;
@@ -228,7 +229,6 @@ footer {
     }
     .arrows {
     font-size: 20px;
-    color: #3C59A5;
     }
          
 }
@@ -350,7 +350,6 @@ footer {
     }
     .arrows {
     font-size: 14px;
-    color: #3C59A5;
     }
 }
 
