@@ -345,6 +345,9 @@ footer {
         border: none;
         font-weight: bold;
     }
+    .small-media-tag {
+        padding-bottom: 30px;
+    }
     .arrows {
     font-size: 14px;
     color: #3C59A5;
